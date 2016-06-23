@@ -33,12 +33,10 @@ function calculateSalesTax(sales, taxRates) {
 
       var total = 0;
       for (var monthlySalesIndex in companyData["sales"]) {
-      total += companyData.sales[monthlySalesIndex];
-    }
+        total += companyData.sales[monthlySalesIndex];
+      }
       results[companyData.name].totalSales += total;
       results[companyData.name].totalTaxes += taxRates[companyData.province] * total;
-
-
     }
 
 
